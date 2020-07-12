@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-ultra-refined",
+  "version": "1.0.0",
+  "description": "Ultra refined ESLint config 📜",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bricss/eslint-config-ultra-refined.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "ultra",
+    "refined"
+  ],
+  "peerDependencies": {
+    "eslint": "^7.4.0"
+  },
+  "author": "Yehor Sergeenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bricss/eslint-config-ultra-refined/issues"
+  },
+  "homepage": "https://github.com/bricss/eslint-config-ultra-refined#readme"
+}
