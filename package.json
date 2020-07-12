@@ -1,9 +1,10 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm dedupe",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

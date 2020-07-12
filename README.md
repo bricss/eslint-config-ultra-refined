@@ -3,7 +3,7 @@ Ultra refined ESLint config 📜
 
 ## Installation
 ```shell
-npm install babel-eslint eslint eslint-config-ultra-refined --save-dev
+npm install @babel/parser @babel/types babel-eslint eslint eslint-config-ultra-refined --save-dev
 ```
 
 ### Setup
