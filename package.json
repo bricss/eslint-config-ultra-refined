@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "refined"
   ],
   "peerDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.4.0"
   },
   "author": "Yehor Sergeenko",
