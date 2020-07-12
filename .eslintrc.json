@@ -26,7 +26,7 @@
       "error",
       {
         "multiline": true,
-        "minItems": 2
+        "minItems": 3
       }
     ],
     "array-bracket-spacing": [
@@ -36,7 +36,10 @@
     "array-callback-return": "error",
     "array-element-newline": [
       "error",
-      "consistent"
+      {
+        "multiline": true,
+        "minItems": 3
+      }
     ],
     "arrow-parens": [
       "error",
@@ -234,7 +237,7 @@
         },
         "ObjectExpression": {
           "consistent": true,
-          "minProperties": 2,
+          "minProperties": 3,
           "multiline": true
         }
       }
@@ -402,10 +405,5 @@
       "warn",
       "never"
     ]
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
   }
 }
