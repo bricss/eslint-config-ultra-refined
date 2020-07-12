@@ -22,11 +22,15 @@
   },
   "root": true,
   "rules": {
-    "array-bracket-spacing": [
+    "array-bracket-newline": [
       "error",
       {
         "minItems": 2
       }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
     ],
     "array-callback-return": "error",
     "array-element-newline": [
