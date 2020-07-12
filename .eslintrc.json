@@ -168,12 +168,7 @@
       }
     ],
     "new-parens": "error",
-    "newline-per-chained-call": [
-      "error",
-      {
-        "ignoreChainWithDepth": 2
-      }
-    ],
+    "newline-per-chained-call": "off",
     "no-await-in-loop": "error",
     "no-console": "warn",
     "no-constructor-return": "error",
