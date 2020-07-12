@@ -193,7 +193,7 @@
     "no-extend-native": "error",
     "no-extra-semi": "error",
     "no-lonely-if": "error",
-    "no-loss-of-precision": "error",
+    "no-loss-of-precision": "warn",
     "no-mixed-operators": "error",
     "no-multiple-empty-lines": [
       "error",
