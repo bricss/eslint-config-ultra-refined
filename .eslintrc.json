@@ -24,7 +24,9 @@
   "rules": {
     "array-bracket-spacing": [
       "error",
-      "never"
+      {
+        "minItems": 2
+      }
     ],
     "array-callback-return": "error",
     "array-element-newline": [
@@ -157,6 +159,12 @@
       }
     ],
     "new-parens": "error",
+    "newline-per-chained-call": [
+      "error",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
     "no-await-in-loop": "error",
     "no-console": "warn",
     "no-constructor-return": "error",
