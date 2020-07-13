@@ -25,10 +25,7 @@
   "rules": {
     "array-bracket-newline": [
       "error",
-      {
-        "multiline": true,
-        "minItems": 3
-      }
+      "consistent"
     ],
     "array-bracket-spacing": [
       "error",
