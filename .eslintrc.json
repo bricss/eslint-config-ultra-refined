@@ -350,7 +350,10 @@
         "avoidEscape": true
       }
     ],
-    "radix": "warn",
+    "radix": [
+      "warn",
+      "as-needed"
+    ],
     "require-await": "error",
     "rest-spread-spacing": [
       "error",
