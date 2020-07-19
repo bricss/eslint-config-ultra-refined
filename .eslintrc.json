@@ -170,10 +170,6 @@
         "tabWidth": 2
       }
     ],
-    "multiline-ternary": [
-      "error",
-      "always-multiline"
-    ],
     "new-parens": "error",
     "newline-per-chained-call": "off",
     "no-await-in-loop": "error",
@@ -354,6 +350,7 @@
         "avoidEscape": true
       }
     ],
+    "radix": "warn",
     "require-await": "error",
     "rest-spread-spacing": [
       "error",

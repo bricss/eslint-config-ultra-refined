@@ -4,7 +4,7 @@ This package provides extensible **ESLint** config for `ES2020+` syntax.
 
 ## Prerequisites
 For Windows machines:
-* [Git](https://gitforwindows.org/) with optional Unix tools
+* [Git](https://gitforwindows.org/) with optional Unix tools ✔
 
 > npm config set script-shell "C:\\\Program Files\\\Git\\\bin\\\bash.exe"  
 > npm config ls -l | grep shell
