@@ -1,9 +1,10 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
+    "postinstall": "printf \"Please install peer dependencies, via command:\\n\\n\" && node -p \"require('./package.json').peerDependencies\" | sed \"s/[\\{\\},]//g ; s/: /@/g\" | xargs echo | xargs -i printf \"npm install {} --save-dev\\n\\n\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,18 +12,25 @@
     "url": "git+ssh://git@github.com/bricss/eslint-config-ultra-refined.git"
   },
   "keywords": [
+    "es2020",
     "eslint",
     "config",
     "ultra",
     "refined"
   ],
-  "peerDependencies": {
-    "@babel/parser": "^7.10.4",
-    "@babel/types": "^7.10.4",
+  "devDependencies": {
+    "@babel/parser": "^7.10.5",
+    "@babel/types": "^7.10.5",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.4.0"
+    "eslint": "^7.5.0"
   },
-  "author": "Yehor Sergeenko",
+  "peerDependencies": {
+    "@babel/parser": "^7.10.5",
+    "@babel/types": "^7.10.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0"
+  },
+  "author": "Yehor Sergeenko <yehor.sergeenko@gmail.com> (https://twitter.com/mistabricss)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bricss/eslint-config-ultra-refined/issues"
