@@ -164,11 +164,16 @@
       {
         "code": 120,
         "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTrailingComments": true,
         "ignoreUrls": true,
         "tabWidth": 2
       }
     ],
-    "new-cap": "warn",
+    "multiline-ternary": [
+      "error",
+      "always-multiline"
+    ],
     "new-parens": "error",
     "newline-per-chained-call": "off",
     "no-await-in-loop": "error",
