@@ -420,7 +420,18 @@
         "words": true
       }
     ],
-    "spaced-comment": "error",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "balanced": true,
+        "exceptions": [
+          "-",
+          "+",
+          "*"
+        ]
+      }
+    ],
     "symbol-description": "error",
     "template-curly-spacing": [
       "error",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
