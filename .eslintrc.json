@@ -40,10 +40,7 @@
     "array-element-newline": [
       "error",
       {
-        "ArrayExpression": {
-          "minItems": 3,
-          "multiline": true
-        },
+        "ArrayExpression": "always",
         "ArrayPattern": "consistent"
       }
     ],
@@ -234,11 +231,11 @@
         "variables": false
       }
     ],
+    "no-useless-backreference": "warn",
     "no-useless-call": "error",
     "no-useless-computed-key": "error",
     "no-useless-concat": "error",
     "no-useless-constructor": "warn",
-    "no-useless-backreference": "warn",
     "no-useless-return": "error",
     "no-whitespace-before-property": "error",
     "object-curly-newline": [
@@ -424,27 +421,27 @@
       "error",
       "always",
       {
-        "line": {
-          "exceptions": [
-            "-",
-            "+",
-            "*",
-            "/",
-            "!",
-            "<",
-            ">"
-          ]
-        },
         "block": {
           "balanced": true,
           "exceptions": [
-            "-",
-            "+",
-            "*",
-            "/",
             "!",
+            "*",
+            "+",
+            "/",
             "<",
-            ">"
+            ">",
+            "-"
+          ]
+        },
+        "line": {
+          "exceptions": [
+            "!",
+            "*",
+            "+",
+            "/",
+            "<",
+            ">",
+            "-"
           ]
         }
       }
