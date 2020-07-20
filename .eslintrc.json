@@ -202,6 +202,7 @@
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-extra-semi": "error",
+    "no-lone-blocks": "error",
     "no-lonely-if": "error",
     "no-loss-of-precision": "warn",
     "no-mixed-operators": "error",
@@ -237,6 +238,7 @@
     "no-useless-computed-key": "error",
     "no-useless-concat": "error",
     "no-useless-constructor": "warn",
+    "no-useless-backreference": "warn",
     "no-useless-return": "error",
     "no-whitespace-before-property": "error",
     "object-curly-newline": [
@@ -418,6 +420,7 @@
         "words": true
       }
     ],
+    "spaced-comment": "error",
     "symbol-description": "error",
     "template-curly-spacing": [
       "error",
