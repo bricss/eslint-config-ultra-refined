@@ -1,6 +1,8 @@
 Ultra refined ESLint config 📜
 ----
-This package provides extensible **ESLint** config for `ES2020+` syntax.
+This package provides extensible, all-purposes **ESLint** config for `ES2020+` syntax.  
+Suitable for `front-end`, `back-end` and `middleware` development.  
+With focus on code readability and prevention of mistakes.
 
 ## Prerequisites
 For Windows machines:
