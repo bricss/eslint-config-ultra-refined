@@ -37,7 +37,13 @@
     "array-callback-return": "error",
     "array-element-newline": [
       "error",
-      "consistent"
+      {
+        "ArrayExpression": {
+          "minItems": 3,
+          "multiline": true
+        },
+        "ArrayPattern": "consistent"
+      }
     ],
     "arrow-parens": [
       "error",
@@ -246,6 +252,9 @@
           "consistent": true,
           "minProperties": 3,
           "multiline": true
+        },
+        "ObjectPattern": {
+          "consistent": true
         }
       }
     ],
@@ -293,6 +302,16 @@
       {
         "blankLine": "always",
         "next": "*",
+        "prev": "default"
+      },
+      {
+        "blankLine": "always",
+        "next": "*",
+        "prev": "multiline-block-like"
+      },
+      {
+        "blankLine": "always",
+        "next": "*",
         "prev": [
           "const",
           "let",
@@ -314,18 +333,13 @@
       },
       {
         "blankLine": "always",
-        "next": "*",
-        "prev": "default"
+        "next": "return",
+        "prev": "*"
       },
       {
         "blankLine": "never",
         "next": "import",
         "prev": "import"
-      },
-      {
-        "blankLine": "always",
-        "next": "*",
-        "prev": "multiline-block-like"
       }
     ],
     "prefer-arrow-callback": "warn",
