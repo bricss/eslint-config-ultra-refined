@@ -424,12 +424,29 @@
       "error",
       "always",
       {
-        "balanced": true,
-        "exceptions": [
-          "-",
-          "+",
-          "*"
-        ]
+        "line": {
+          "exceptions": [
+            "-",
+            "+",
+            "*",
+            "/",
+            "!",
+            "<",
+            ">"
+          ]
+        },
+        "block": {
+          "balanced": true,
+          "exceptions": [
+            "-",
+            "+",
+            "*",
+            "/",
+            "!",
+            "<",
+            ">"
+          ]
+        }
       }
     ],
     "symbol-description": "error",
@@ -437,7 +454,6 @@
       "error",
       "always"
     ],
-    "use-isnan": "error",
     "yield-star-spacing": [
       "error",
       "after"
