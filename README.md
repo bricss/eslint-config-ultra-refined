@@ -1,8 +1,7 @@
 Ultra refined ESLint config 📜
 ----
-This package provides extensible, all-purposes **ESLint** config for `ES2020+` syntax.  
-Suitable for `front-end`, `back-end` and `middleware` development.  
-With focus on code readability and prevention of mistakes.
+This package provides all-purpose, extensible **ESLint** config for `ES2020+` syntax.  
+With a focus on code readability and prevention of mistakes.
 
 ## Prerequisites
 For Windows machines:
@@ -15,8 +14,8 @@ For Windows machines:
 ```shell
 npm install eslint-config-ultra-refined --save-dev
 ```
-Install peer dependencies after completion.  
-You will see the prompt in the console after installation.  
+Install peer dependencies when complete.  
+You will see a prompt in the console after installation.  
 Or run the following command:
 ```shell
 node -p "require('eslint-config-ultra-refined/package').peerDependecies" | sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev

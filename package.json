@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
-    "postinstall": "printf \"Please install peer dependencies, via command:\\n\\n\" && node -p \"require('./package.json').peerDependencies\" | sed \"s/[\\{\\},]//g ; s/: /@/g\" | xargs echo | xargs -i printf \"npm install {} --save-dev\\n\\n\"",
+    "postinstall": "printf \"Please install peer dependencies, via command:\\n\\n\" && node -p \"require('./package.json').peerDependencies\" | sed \"s/[\\{\\},]//g ; s/: /@/g\" | xargs echo | xargs -I {} printf \"npm install {} --save-dev\\n\\n\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
