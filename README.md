@@ -18,7 +18,7 @@ Install peer dependencies when complete.
 You will see a prompt in the console after installation.  
 Or run the following command:
 ```shell
-node -p "require('eslint-config-ultra-refined/package').peerDependecies" | sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev
+node -p "require('eslint-config-ultra-refined/package').peerDependencies" | sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev
 ```
 Before **usage** run `npm dedup` to fixate correct package resolutions.
 
