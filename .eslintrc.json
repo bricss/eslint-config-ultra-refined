@@ -367,6 +367,7 @@
       "warn",
       "as-needed"
     ],
+    "require-atomic-updates": "error",
     "require-await": "error",
     "rest-spread-spacing": [
       "error",

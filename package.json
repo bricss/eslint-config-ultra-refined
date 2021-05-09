@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
@@ -14,20 +14,21 @@
   "keywords": [
     "es2020",
     "es2021",
+    "es2022",
     "eslint",
     "config",
     "ultra",
     "refined"
   ],
   "devDependencies": {
-    "@babel/core": "7.12.9",
-    "@babel/eslint-parser": "^7.12.1",
-    "eslint": "7.15.0"
+    "@babel/core": "7.14.0",
+    "@babel/eslint-parser": "7.13.14",
+    "eslint": "7.26.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/eslint-parser": "^7.12.1",
-    "eslint": "^7.15.0"
+    "@babel/core": "^7.14.0",
+    "@babel/eslint-parser": "^7.13.14",
+    "eslint": "^7.26.0"
   },
   "author": "Yehor Sergeenko <yehor.sergeenko@gmail.com> (https://twitter.com/mistabricss)",
   "license": "MIT",
