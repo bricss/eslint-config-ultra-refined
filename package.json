@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
@@ -21,13 +21,13 @@
     "refined"
   ],
   "devDependencies": {
-    "@babel/core": "7.14.0",
-    "@babel/eslint-parser": "7.13.14",
+    "@babel/core": "7.14.3",
+    "@babel/eslint-parser": "7.14.3",
     "eslint": "7.26.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/eslint-parser": "^7.13.14",
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
     "eslint": "^7.26.0"
   },
   "author": "Yehor Sergeenko <yehor.sergeenko@gmail.com> (https://twitter.com/mistabricss)",
