@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ultra-refined",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Ultra refined ESLint config 📜",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@babel/core": "7.14.3",
     "@babel/eslint-parser": "7.14.3",
-    "eslint": "7.26.0"
+    "eslint": "^7.27.0"
   },
   "peerDependencies": {
     "@babel/core": "^7.14.3",

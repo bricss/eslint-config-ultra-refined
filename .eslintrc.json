@@ -222,6 +222,13 @@
     "no-unneeded-ternary": "error",
     "no-unreachable-loop": "error",
     "no-unsafe-optional-chaining": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "after-used",
+        "ignoreRestSiblings": true
+      }
+    ],
     "no-use-before-define": [
       "error",
       {
