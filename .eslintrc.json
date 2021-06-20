@@ -1,8 +1,6 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "jasmine": true,
     "mocha": true,
     "mongo": true,
     "node": true

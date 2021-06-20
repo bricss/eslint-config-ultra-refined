@@ -1,18 +1,20 @@
 {
-  "name": "eslint-config-ultra-refined",
-  "version": "1.0.33",
+  "author": {
+    "name": "Yehor Sergeenko",
+    "email": "yehor.sergeenko@gmail.com",
+    "url": "https://github.com/bricss"
+  },
+  "bugs": {
+    "url": "https://github.com/bricss/eslint-config-ultra-refined/issues"
+  },
   "description": "Ultra refined ESLint config 📜",
-  "main": "index.js",
-  "scripts": {
-    "postinstall": "printf \"Please install peer dependencies, via command:\\n\\n\" && node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d '\\047' | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.5",
+    "eslint": "^7.29.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/bricss/eslint-config-ultra-refined.git"
-  },
+  "homepage": "https://github.com/bricss/eslint-config-ultra-refined#readme",
   "keywords": [
-    "es2020",
     "es2021",
     "es2022",
     "eslint",
@@ -20,20 +22,21 @@
     "ultra",
     "refined"
   ],
-  "devDependencies": {
-    "@babel/core": "7.14.3",
-    "@babel/eslint-parser": "7.14.3",
-    "eslint": "^7.27.0"
-  },
-  "peerDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/eslint-parser": "^7.14.3",
-    "eslint": "^7.26.0"
-  },
-  "author": "Yehor Sergeenko <yehor.sergeenko@gmail.com> (https://twitter.com/mistabricss)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bricss/eslint-config-ultra-refined/issues"
+  "peerDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.5",
+    "eslint": "^7.29.0"
   },
-  "homepage": "https://github.com/bricss/eslint-config-ultra-refined#readme"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bricss/eslint-config-ultra-refined.git"
+  },
+  "scripts": {
+    "postinstall": "printf \"Please install peer dependencies, via command:\\n\\n\" && node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d '\\047' | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "./index.js",
+  "name": "eslint-config-ultra-refined",
+  "version": "1.0.34"
 }
