@@ -196,7 +196,6 @@
     "no-extra-semi": "error",
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
-    "no-loss-of-precision": "warn",
     "no-mixed-operators": "error",
     "no-multiple-empty-lines": [
       "error",
@@ -219,7 +218,6 @@
     "no-undef-init": "error",
     "no-unneeded-ternary": "error",
     "no-unreachable-loop": "error",
-    "no-unsafe-optional-chaining": "error",
     "no-unused-vars": [
       "error",
       {
@@ -235,7 +233,6 @@
         "variables": false
       }
     ],
-    "no-useless-backreference": "warn",
     "no-useless-call": "error",
     "no-useless-computed-key": "error",
     "no-useless-concat": "error",
