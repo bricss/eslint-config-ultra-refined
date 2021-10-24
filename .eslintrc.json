@@ -218,6 +218,7 @@
     "no-undef-init": "error",
     "no-unneeded-ternary": "error",
     "no-unreachable-loop": "error",
+    "no-unused-private-class-members": "error",
     "no-unused-vars": [
       "error",
       {

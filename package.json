@@ -11,7 +11,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
-    "eslint": "^8.0.0"
+    "eslint": "^8.1.0"
   },
   "homepage": "https://github.com/bricss/eslint-config-ultra-refined#readme",
   "keywords": [
@@ -26,17 +26,18 @@
   "peerDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
-    "eslint": "^8.0.0"
+    "eslint": "^8.1.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/bricss/eslint-config-ultra-refined.git"
   },
   "scripts": {
-    "postinstall": "printf \"Please install peer dependencies, via command:\\n\\n\" && node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d '\\047' | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
+    "peersinstall": "node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d ['\\042','\\047'] | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
+    "postinstall": "printf \"Please, install peer dependencies by following command:\\n\\n\" && npm -s run peersinstall",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "./index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "2.0.0"
+  "version": "2.1.0"
 }

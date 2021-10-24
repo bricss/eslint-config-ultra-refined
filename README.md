@@ -1,13 +1,13 @@
 Ultra refined ESLint config 📜
 ---
-This package provides all-purpose, extensible **ESLint** config for `ES2022+` syntax.  
-With a focus on code readability and prevention of mistakes.
+This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ES2022+` syntax.  
+With an emphasis on code readability and flaws prevention.
 
 ## Prerequisites
 
 For Windows machines:
 
-* [Git](https://gitforwindows.org/) with optional Unix tools ✔
+* [Git](https://gitforwindows.org/) with optional Unix toolset ✔
 
 > npm config set script-shell "C:\\\Program Files\\\Git\\\bin\\\bash.exe"  
 > npm config ls -l | grep shell
@@ -18,15 +18,10 @@ For Windows machines:
 npm install eslint-config-ultra-refined --save-dev
 ```
 
-Install peer dependencies when complete.  
-You will see a prompt in the console after installation.  
-Or run the following command:
+Install peer dependencies if needed.  
+You will see the prompt in the shell output upon installation.
 
-```bash
-node -p "require('eslint-config-ultra-refined/package').peerDependencies" | sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev
-```
-
-Before **usage** run `npm dedup` to fixate correct package resolutions.
+In case of somewhat issues run `npm dedup` to fixate correct package resolutions.
 
 ### Usage
 
