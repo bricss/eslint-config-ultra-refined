@@ -9,24 +9,30 @@
   },
   "description": "Ultra refined ESLint config 📜",
   "devDependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
-    "eslint": "^8.5.0"
+    "eslint": "^8.8.0"
   },
+  "files": [
+    "*.js",
+    "*.json"
+  ],
   "homepage": "https://github.com/bricss/eslint-config-ultra-refined#readme",
   "keywords": [
     "es2021",
     "es2022",
     "eslint",
+    "eslintconfig",
+    "eslintrc",
     "config",
     "ultra",
     "refined"
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
-    "eslint": "^8.5.0"
+    "eslint": "^8.8.0"
   },
   "repository": {
     "type": "git",
@@ -39,5 +45,5 @@
   },
   "main": "./index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "2.3.0"
+  "version": "2.4.0"
 }
