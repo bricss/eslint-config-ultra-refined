@@ -9,9 +9,9 @@
   },
   "description": "Ultra refined ESLint config 📜",
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
-    "eslint": "^8.14.0"
+    "@babel/core": "^7.19.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^8.24.0"
   },
   "files": [
     "*.js",
@@ -30,9 +30,9 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
-    "eslint": "^8.14.0"
+    "@babel/core": "^7.19.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^8.24.0"
   },
   "repository": {
     "type": "git",
@@ -40,10 +40,10 @@
   },
   "scripts": {
     "peersinstall": "node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d ['\\042','\\047'] | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
-    "postinstall": "printf \"Please, install peer dependencies by following command:\\n\\n\" && npm -s run peersinstall",
+    "postinstall": "printf \"Please, install peer dependencies via following command:\\n\\n\" && npm -s run peersinstall",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "./index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "2.5.0"
+  "version": "2.6.0"
 }

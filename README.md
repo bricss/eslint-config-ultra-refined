@@ -7,7 +7,7 @@ With an emphasis on code readability and flaws prevention.
 
 For Windows machines:
 
-* [Git](https://gitforwindows.org/) with optional Unix toolset ✔
+* [Git](https://gitforwindows.org/) with optional Unix toolset ✅
 
 > npm config set script-shell "C:\\\Program Files\\\Git\\\bin\\\bash.exe"  
 > npm config ls -l | grep shell

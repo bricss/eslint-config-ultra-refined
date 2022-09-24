@@ -154,6 +154,13 @@
         "exceptAfterSingleLine": true
       }
     ],
+    "logical-assignment-operators": [
+      "warn",
+      "always",
+      {
+        "enforceForIfStatements": true
+      }
+    ],
     "max-classes-per-file": [
       "error",
       2
@@ -277,6 +284,10 @@
       }
     ],
     "one-var-declaration-per-line": "error",
+    "operator-assignment": [
+      "warn",
+      "always"
+    ],
     "operator-linebreak": [
       "error",
       "before",
