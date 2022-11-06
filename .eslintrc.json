@@ -190,6 +190,12 @@
         "allowElseIf": false
       }
     ],
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
     "no-empty-function": [
       "error",
       {
@@ -198,6 +204,7 @@
         ]
       }
     ],
+    "no-empty-static-block": "error",
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-lone-blocks": "error",
@@ -211,6 +218,7 @@
         "maxEOF": 1
       }
     ],
+    "no-new-native-nonconstructor": "error",
     "no-promise-executor-return": "error",
     "no-proto": "error",
     "no-prototype-builtins": "warn",
