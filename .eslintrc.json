@@ -45,17 +45,8 @@
         "ArrayPattern": "consistent"
       }
     ],
-    "arrow-parens": [
-      "error",
-      "always"
-    ],
-    "arrow-spacing": [
-      "error",
-      {
-        "after": true,
-        "before": true
-      }
-    ],
+    "arrow-parens": "error",
+    "arrow-spacing": "error",
     "block-spacing": "error",
     "brace-style": [
       "error",
@@ -141,12 +132,7 @@
         ]
       }
     ],
-    "key-spacing": [
-      "error",
-      {
-        "mode": "strict"
-      }
-    ],
+    "key-spacing": "error",
     "keyword-spacing": [
       "error",
       {
@@ -161,6 +147,7 @@
         "exceptAfterSingleLine": true
       }
     ],
+    "linebreak-style": "error",
     "logical-assignment-operators": [
       "warn",
       "always",
@@ -170,7 +157,10 @@
     ],
     "max-classes-per-file": [
       "error",
-      2
+      {
+        "ignoreExpressions": true,
+        "max": 3
+      }
     ],
     "max-len": [
       "error",
@@ -203,17 +193,11 @@
         "allowEmptyCatch": true
       }
     ],
-    "no-empty-function": [
-      "error",
-      {
-        "allow": [
-          "constructors"
-        ]
-      }
-    ],
+    "no-empty-function": "error",
     "no-empty-static-block": "error",
     "no-extend-native": "error",
     "no-extra-bind": "error",
+    "no-extra-parens": "warn",
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
     "no-mixed-operators": "error",
@@ -299,10 +283,7 @@
       }
     ],
     "one-var-declaration-per-line": "error",
-    "operator-assignment": [
-      "warn",
-      "always"
-    ],
+    "operator-assignment": "error",
     "operator-linebreak": [
       "error",
       "before",
@@ -435,10 +416,7 @@
         "named": "never"
       }
     ],
-    "space-in-parens": [
-      "error",
-      "never"
-    ],
+    "space-in-parens": "error",
     "space-infix-ops": "error",
     "space-unary-ops": [
       "warn",
