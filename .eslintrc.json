@@ -140,6 +140,12 @@
         "before": true
       }
     ],
+    "lines-around-comment": [
+      "error",
+      {
+        "afterHashbangComment": true
+      }
+    ],
     "lines-between-class-members": [
       "error",
       "always",
