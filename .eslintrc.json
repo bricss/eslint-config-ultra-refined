@@ -143,7 +143,8 @@
     "lines-around-comment": [
       "error",
       {
-        "afterHashbangComment": true
+        "afterHashbangComment": true,
+        "beforeBlockComment": false
       }
     ],
     "lines-between-class-members": [
