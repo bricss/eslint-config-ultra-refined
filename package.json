@@ -9,9 +9,9 @@
   },
   "description": "Ultra refined ESLint config 📜",
   "devDependencies": {
-    "@babel/core": "^7.21.8",
+    "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.8",
-    "eslint": "^8.40.0"
+    "eslint": "^8.41.0"
   },
   "files": [
     "*.js",
@@ -45,5 +45,5 @@
   },
   "main": "./index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "2.13.0"
+  "version": "2.14.0"
 }

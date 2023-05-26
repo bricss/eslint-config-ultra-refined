@@ -14,7 +14,7 @@
     "babelOptions": {
       "parserOpts": {
         "plugins": [
-          "importAssertions"
+          "importAttributes"
         ]
       }
     },
