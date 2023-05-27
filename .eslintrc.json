@@ -14,7 +14,12 @@
     "babelOptions": {
       "parserOpts": {
         "plugins": [
-          "importAttributes"
+          [
+            "importAttributes",
+            {
+              "deprecatedAssertSyntax": true
+            }
+          ]
         ]
       }
     },
