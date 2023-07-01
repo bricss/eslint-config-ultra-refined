@@ -1,6 +1,6 @@
 Ultra refined ESLint config 📜
 ---
-This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ES2022+` syntax.  
+This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ES2024+` syntax.  
 With an emphasis on code readability and flaws prevention.
 
 ## Prerequisites
