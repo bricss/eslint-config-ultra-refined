@@ -61,6 +61,14 @@
       }
     ],
     "camelcase": "warn",
+    "capitalized-comments": [
+      "warn",
+      "always",
+      {
+        "ignoreConsecutiveComments": true,
+        "ignoreInlineComments": true
+      }
+    ],
     "comma-dangle": [
       "error",
       "always-multiline"
@@ -227,7 +235,6 @@
     "no-promise-executor-return": "error",
     "no-proto": "error",
     "no-prototype-builtins": "warn",
-    "no-return-await": "error",
     "no-self-compare": "error",
     "no-sequences": "warn",
     "no-tabs": "error",
