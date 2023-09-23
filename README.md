@@ -7,10 +7,12 @@ With an emphasis on code readability and flaws prevention.
 
 For Windows machines:
 
-* [Git](https://gitforwindows.org/) with optional Unix toolset ✅
+* [Git](https://gitforwindows.org/) with Unix tools 🧰
 
-> npm config set script-shell "C:\\\Program Files\\\Git\\\bin\\\bash.exe"  
-> npm config ls -l | grep shell
+```bash
+npm config set script-shell "C:\\\Program Files\\\Git\\\bin\\\bash.exe"  
+npm config ls -l | grep shell
+```
 
 ## Installation
 
@@ -18,7 +20,7 @@ For Windows machines:
 npm install eslint-config-ultra-refined --save-dev
 ```
 
-Install peer dependencies if needed.  
+Install peer dependencies manually if needed.  
 You will see the prompt in the shell output upon installation.
 
 In case of somewhat issues run `npm dedup` to fixate correct package resolutions.
