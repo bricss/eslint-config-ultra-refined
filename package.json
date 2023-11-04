@@ -9,9 +9,10 @@
   },
   "description": "Ultra refined ESLint config 📜",
   "devDependencies": {
-    "@babel/core": "^7.22.20",
+    "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
-    "eslint": "^8.50.0"
+    "@stylistic/eslint-plugin-js": "^1.0.0",
+    "eslint": "^8.53.0"
   },
   "files": [
     "*.js",
@@ -30,9 +31,10 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@babel/core": "^7.22.20",
+    "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
-    "eslint": "^8.50.0"
+    "@stylistic/eslint-plugin-js": "^1.0.0",
+    "eslint": "^8.53.0"
   },
   "repository": {
     "type": "git",
@@ -45,5 +47,5 @@
   },
   "main": "./index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "2.18.0"
+  "version": "2.19.0"
 }
