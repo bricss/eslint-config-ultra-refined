@@ -9,9 +9,9 @@
   },
   "description": "Ultra refined ESLint config 📜",
   "devDependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/eslint-parser": "^7.22.15",
-    "@stylistic/eslint-plugin-js": "^1.0.0",
+    "@babel/core": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.3",
+    "@stylistic/eslint-plugin-js": "^1.1.0",
     "eslint": "^8.53.0"
   },
   "files": [
@@ -31,14 +31,14 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@babel/core": "^7.23.2",
-    "@babel/eslint-parser": "^7.22.15",
-    "@stylistic/eslint-plugin-js": "^1.0.0",
+    "@babel/core": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.3",
+    "@stylistic/eslint-plugin-js": "^1.1.0",
     "eslint": "^8.53.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bricss/eslint-config-ultra-refined.git"
+    "url": "git+https://github.com/bricss/eslint-config-ultra-refined.git"
   },
   "scripts": {
     "peerinstall": "node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d ['\\042','\\047'] | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
@@ -47,5 +47,5 @@
   },
   "main": "./index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "2.19.0"
+  "version": "2.19.1"
 }
