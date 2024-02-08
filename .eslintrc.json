@@ -280,6 +280,10 @@
         "prev": "import"
       }
     ],
+    "@stylistic/js/quote-props": [
+      "error",
+      "as-needed"
+    ],
     "@stylistic/js/quotes": [
       "error",
       "single",
