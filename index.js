@@ -1,1 +1,1 @@
-module.exports = require('./.eslintrc.json');
+export * from './eslint.config.js';
