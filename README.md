@@ -21,8 +21,8 @@ npm install eslint-config-ultra-refined --save-dev
 ```
 
 Install peer dependencies manually if needed.  
-You will see the prompt in the shell output upon installation.
-If you see conflicting peer dependency error use `--force` flag.
+You will see the prompt in the shell output upon installation.  
+In case of conflicting peer dependency error use `--force` flag.
 
 ### Usage
 
@@ -35,6 +35,7 @@ export default [
   ...ultraRefined,
   // your modifications
   {
+    ignores: ['dist'],
     rules: {
       // your modifications
     }

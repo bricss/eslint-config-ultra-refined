@@ -1,11 +1,17 @@
 import babelParser from '@babel/eslint-parser';
 import js from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
+import globals from 'globals';
 
 export default [
   js.configs.recommended,
   {
     languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.mocha,
+        ...globals.node,
+      },
       parser: babelParser,
       parserOptions: {
         babelOptions: {
@@ -413,7 +419,6 @@ export default [
       ],
       'no-await-in-loop': 'error',
       'no-console': 'warn',
-      'no-constant-binary-expression': 'error',
       'no-constructor-return': 'error',
       'no-debugger': 'warn',
       'no-duplicate-imports': 'error',
@@ -430,12 +435,11 @@ export default [
         },
       ],
       'no-empty-function': 'error',
-      'no-empty-static-block': 'error',
       'no-extend-native': 'error',
       'no-extra-bind': 'error',
       'no-lone-blocks': 'error',
       'no-lonely-if': 'error',
-      'no-new-native-nonconstructor': 'error',
+      'no-new-symbol': 'error',
       'no-object-constructor': 'error',
       'no-promise-executor-return': 'error',
       'no-proto': 'error',
@@ -446,7 +450,6 @@ export default [
       'no-undef-init': 'error',
       'no-unneeded-ternary': 'error',
       'no-unreachable-loop': 'error',
-      'no-unused-private-class-members': 'error',
       'no-unused-vars': [
         'error',
         {
