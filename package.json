@@ -49,5 +49,5 @@
   "type": "module",
   "main": "index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "3.0.2"
+  "version": "3.0.3"
 }

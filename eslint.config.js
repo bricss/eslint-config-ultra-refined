@@ -9,8 +9,12 @@ export default [
     languageOptions: {
       globals: {
         ...globals.browser,
+        ...globals.builtin,
         ...globals.mocha,
         ...globals.node,
+        ...globals.nodeBuiltin,
+        ...globals.serviceworker,
+        ...globals.worker,
       },
       parser: babelParser,
       parserOptions: {
