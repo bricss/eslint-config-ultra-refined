@@ -1,7 +1,7 @@
-Ultra refined ESLint config 📜
+Ultra refined ESLint shareable config 📜
 ---
 This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ES2024+` syntax.  
-With focus on a source code readability and counteractions against bugs.
+With an emphasis on code readability and counterchecks against implicit flaws.
 
 ## Prerequisites
 
@@ -21,8 +21,7 @@ npm install eslint-config-ultra-refined --save-dev
 ```
 
 Install peer dependencies manually if needed.  
-You will see the prompt in the shell output upon installation.  
-In case of conflicting peer dependency error, use the `--force` flag.
+You will see the prompt in the shell output upon installation.
 
 ### Usage
 

@@ -7,13 +7,14 @@
   "bugs": {
     "url": "https://github.com/bricss/eslint-config-ultra-refined/issues"
   },
-  "description": "Ultra refined ESLint config 📜",
+  "description": "Ultra refined ESLint shareable config 📜",
   "devDependencies": {
-    "@babel/eslint-parser": "^7.24.1",
-    "@eslint/js": "^9.0.0",
-    "@stylistic/eslint-plugin-js": "^1.7.0",
-    "eslint": "^9.0.0",
-    "globals": "^15.0.0"
+    "@babel/core": "^7.24.5",
+    "@babel/eslint-parser": "^7.24.5",
+    "@eslint/js": "^9.1.1",
+    "@stylistic/eslint-plugin-js": "^1.7.2",
+    "eslint": "^9.1.1",
+    "globals": "^15.1.0"
   },
   "files": [
     "*.js"
@@ -23,19 +24,22 @@
     "esnext",
     "eslint",
     "eslintconfig",
+    "codeguide",
     "config",
     "ultra",
     "refined",
     "shareableconfig",
+    "stylelint",
     "stylistic"
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@babel/eslint-parser": "^7.24.1",
-    "@eslint/js": "^9.0.0",
-    "@stylistic/eslint-plugin-js": "^1.7.0",
-    "eslint": "^9.0.0",
-    "globals": "^15.0.0"
+    "@babel/core": "^7.24.5",
+    "@babel/eslint-parser": "^7.24.5",
+    "@eslint/js": "^9.1.1",
+    "@stylistic/eslint-plugin-js": "^1.7.2",
+    "eslint": "^9.1.1",
+    "globals": "^15.1.0"
   },
   "repository": {
     "type": "git",
@@ -44,10 +48,11 @@
   "scripts": {
     "peerinstall": "node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d ['\\042','\\047'] | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
     "postinstall": "printf \"To install peer dependencies manually run the following command:\\n\\n\" && npm -s run peerinstall",
+    "start": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
   "main": "index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "3.0.3"
+  "version": "3.0.4"
 }
