@@ -1,6 +1,7 @@
 import babelParser from '@babel/eslint-parser';
 import js from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import globals from 'globals';
 
 export default [
@@ -38,6 +39,7 @@ export default [
     },
     plugins: {
       '@stylistic/js': stylisticJs,
+      '@stylistic/plus': stylisticPlus,
     },
     rules: {
       '@stylistic/js/array-bracket-newline': [
@@ -131,6 +133,10 @@ export default [
           before: true,
         },
       ],
+      '@stylistic/js/line-comment-position': [
+        'error',
+        { ignorePattern: 'pragma' },
+      ],
       '@stylistic/js/lines-around-comment': [
         'error',
         {
@@ -155,6 +161,10 @@ export default [
           ignoreUrls: true,
           tabWidth: 2,
         },
+      ],
+      '@stylistic/js/multiline-comment-style': [
+        'error',
+        'separate-lines',
       ],
       '@stylistic/js/new-parens': 'error',
       '@stylistic/js/newline-per-chained-call': 'off',
@@ -374,6 +384,10 @@ export default [
       '@stylistic/js/yield-star-spacing': [
         'error',
         'after',
+      ],
+      '@stylistic/plus/indent-binary-ops': [
+        'error',
+        2,
       ],
       'accessor-pairs': 'error',
       'array-callback-return': 'error',

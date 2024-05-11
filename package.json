@@ -11,35 +11,37 @@
   "devDependencies": {
     "@babel/core": "^7.24.5",
     "@babel/eslint-parser": "^7.24.5",
-    "@eslint/js": "^9.1.1",
-    "@stylistic/eslint-plugin-js": "^1.8.0",
-    "eslint": "^9.1.1",
-    "globals": "^15.1.0"
+    "@eslint/js": "^9.2.0",
+    "@stylistic/eslint-plugin-js": "^2.1.0",
+    "@stylistic/eslint-plugin-plus": "^2.1.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.2.0"
   },
   "files": [
     "*.js"
   ],
   "homepage": "https://github.com/bricss/eslint-config-ultra-refined#readme",
   "keywords": [
-    "esnext",
     "eslint",
-    "eslintconfig",
-    "codeguide",
+    "eslint-config",
+    "eslint-plugin",
+    "eslint-stylistic",
+    "formatter",
     "config",
     "ultra",
     "refined",
     "shareableconfig",
-    "stylelint",
     "stylistic"
   ],
   "license": "MIT",
   "peerDependencies": {
     "@babel/core": "^7.24.5",
     "@babel/eslint-parser": "^7.24.5",
-    "@eslint/js": "^9.1.1",
-    "@stylistic/eslint-plugin-js": "^1.8.0",
-    "eslint": "^9.1.1",
-    "globals": "^15.1.0"
+    "@eslint/js": "^9.2.0",
+    "@stylistic/eslint-plugin-js": "^2.1.0",
+    "@stylistic/eslint-plugin-plus": "^2.1.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.2.0"
   },
   "repository": {
     "type": "git",
@@ -54,5 +56,5 @@
   "type": "module",
   "main": "index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "3.0.5"
+  "version": "3.1.0"
 }
