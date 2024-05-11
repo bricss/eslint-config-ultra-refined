@@ -398,6 +398,7 @@ export default [
         {
           ignoreConsecutiveComments: true,
           ignoreInlineComments: true,
+          ignorePattern: 'pragma|ignored',
         },
       ],
       curly: [
