@@ -9,13 +9,13 @@
   },
   "description": "Ultra refined ESLint shareable config 📜",
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/eslint-parser": "^7.24.7",
-    "@eslint/js": "^9.2.0",
-    "@stylistic/eslint-plugin-js": "^2.1.0",
-    "@stylistic/eslint-plugin-plus": "^2.1.0",
-    "eslint": "^9.4.0",
-    "globals": "^15.4.0"
+    "@babel/core": "^7.24.9",
+    "@babel/eslint-parser": "^7.25.0",
+    "@eslint/js": "^9.8.0",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "@stylistic/eslint-plugin-plus": "^2.3.0",
+    "eslint": "^9.8.0",
+    "globals": "^15.8.0"
   },
   "files": [
     "*.js"
@@ -35,13 +35,13 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/eslint-parser": "^7.24.7",
-    "@eslint/js": "^9.2.0",
-    "@stylistic/eslint-plugin-js": "^2.1.0",
-    "@stylistic/eslint-plugin-plus": "^2.1.0",
-    "eslint": "^9.4.0",
-    "globals": "^15.4.0"
+    "@babel/core": "^7.24.9",
+    "@babel/eslint-parser": "^7.25.0",
+    "@eslint/js": "^9.8.0",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "@stylistic/eslint-plugin-plus": "^2.3.0",
+    "eslint": "^9.8.0",
+    "globals": "^15.8.0"
   },
   "repository": {
     "type": "git",
@@ -56,5 +56,5 @@
   "type": "module",
   "main": "index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "3.1.2"
+  "version": "3.1.3"
 }
