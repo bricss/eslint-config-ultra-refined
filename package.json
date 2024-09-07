@@ -11,10 +11,10 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
-    "@eslint/js": "^9.9.0",
-    "@stylistic/eslint-plugin-js": "^2.6.4",
-    "@stylistic/eslint-plugin-plus": "^2.6.4",
-    "eslint": "^9.9.0",
+    "@eslint/js": "^9.10.0",
+    "@stylistic/eslint-plugin-js": "^2.7.2",
+    "@stylistic/eslint-plugin-plus": "^2.7.2",
+    "eslint": "^9.10.0",
     "globals": "^15.9.0"
   },
   "files": [
@@ -37,10 +37,10 @@
   "peerDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
-    "@eslint/js": "^9.9.0",
-    "@stylistic/eslint-plugin-js": "^2.6.4",
-    "@stylistic/eslint-plugin-plus": "^2.6.4",
-    "eslint": "^9.9.0",
+    "@eslint/js": "^9.10.0",
+    "@stylistic/eslint-plugin-js": "^2.7.2",
+    "@stylistic/eslint-plugin-plus": "^2.7.2",
+    "eslint": "^9.10.0",
     "globals": "^15.9.0"
   },
   "repository": {
@@ -56,5 +56,5 @@
   "type": "module",
   "main": "index.js",
   "name": "eslint-config-ultra-refined",
-  "version": "3.2.4"
+  "version": "3.2.5"
 }
