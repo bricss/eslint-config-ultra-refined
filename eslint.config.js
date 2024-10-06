@@ -385,6 +385,12 @@ export default [
         'error',
         'after',
       ],
+      '@stylistic/plus/curly-newline': [
+        'error',
+        {
+          consistent: true,
+        },
+      ],
       '@stylistic/plus/indent-binary-ops': [
         'error',
         2,
