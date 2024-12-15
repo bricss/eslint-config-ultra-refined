@@ -323,6 +323,10 @@ export default [
         'error',
         'always',
       ],
+      '@stylistic/yield-star-spacing': [
+        'error',
+        'after',
+      ],
       'accessor-pairs': 'error',
       'array-callback-return': 'error',
       camelcase: 'warn',
