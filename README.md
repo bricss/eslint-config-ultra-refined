@@ -31,10 +31,12 @@ In `eslint.config.js` file:
 import ultraRefined from 'eslint-config-ultra-refined';
 
 export default [
+  {
+    ignores: ['dist'], // global ignores
+  },
   ...ultraRefined,
   // your modifications
   {
-    ignores: ['dist'],
     rules: {
       // your modifications
     },

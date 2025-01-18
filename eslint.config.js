@@ -406,6 +406,7 @@ export default [
       'no-template-curly-in-string': 'error',
       'no-throw-literal': 'error',
       'no-undef-init': 'error',
+      'no-unmodified-loop-condition': 'warn',
       'no-unneeded-ternary': 'error',
       'no-unreachable-loop': 'error',
       'no-unused-vars': [
