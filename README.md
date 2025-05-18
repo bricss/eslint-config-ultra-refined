@@ -1,6 +1,6 @@
 Ultra refined ESLint shareable config 📜
 ---
-This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ES2025+` syntax.  
+This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ES2026+` syntax.  
 With an emphasis on readability and counterchecks against implicit code flaws.
 
 ## Prerequisites
