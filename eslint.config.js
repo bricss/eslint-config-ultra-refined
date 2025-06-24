@@ -79,7 +79,6 @@ export default [
         'error',
         'property',
       ],
-      '@stylistic/func-call-spacing': 'error',
       '@stylistic/function-paren-newline': [
         'warn',
         'multiline-arguments',
