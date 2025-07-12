@@ -395,6 +395,7 @@ export default [
       'no-extra-bind': 'error',
       'no-lone-blocks': 'error',
       'no-lonely-if': 'error',
+      'no-loop-func': 'error',
       'no-new-symbol': 'error',
       'no-new-wrappers': 'error',
       'no-object-constructor': 'error',
