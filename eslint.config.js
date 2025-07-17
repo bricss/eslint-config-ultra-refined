@@ -5,7 +5,7 @@ import globals from 'globals';
 
 export default [
   js.configs.recommended,
-  stylistic.configs['recommended-flat'],
+  stylistic.configs.recommended,
   {
     languageOptions: {
       globals: {
@@ -271,7 +271,6 @@ export default [
         'error',
         'single',
         {
-          allowTemplateLiterals: false,
           avoidEscape: true,
         },
       ],
