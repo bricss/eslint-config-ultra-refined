@@ -1,6 +1,6 @@
 Ultra refined ESLint shareable config 📜
 ---
-This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ES2026+` syntax.  
+This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ESNext` syntax.  
 With an emphasis on readability and counterchecks against implicit code flaws.
 
 ## Prerequisites
@@ -29,17 +29,19 @@ In `eslint.config.js` file:
 
 ```javascript
 import ultraRefined from 'eslint-config-ultra-refined';
+import {
+  defineConfig,
+  globalIgnores,
+} from 'eslint/config';
 
-export default [
+export default defineConfig([
+  globalIgnores(['dist']),
   {
-    ignores: ['dist'], // global ignores
-  },
-  ...ultraRefined,
-  // your modifications
-  {
+    extends: [ultraRefined],
+    // Your modifications
     rules: {
-      // your modifications
+      // Your modifications
     },
   },
-];
+]);
 ```

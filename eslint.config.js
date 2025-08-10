@@ -1,12 +1,15 @@
 import babelParser from '@babel/eslint-parser';
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 
-export default [
-  js.configs.recommended,
-  stylistic.configs.recommended,
+export default defineConfig([
   {
+    extends: [
+      js.configs.recommended,
+      stylistic.configs.recommended,
+    ],
     languageOptions: {
       globals: {
         ...globals.browser,
@@ -36,9 +39,6 @@ export default [
         },
         requireConfigFile: false,
       },
-    },
-    plugins: {
-      '@stylistic': stylistic,
     },
     rules: {
       '@stylistic/array-bracket-newline': [
@@ -321,10 +321,6 @@ export default [
         'error',
         'always',
       ],
-      '@stylistic/yield-star-spacing': [
-        'error',
-        'after',
-      ],
       'accessor-pairs': 'error',
       'array-callback-return': 'error',
       camelcase: 'warn',
@@ -486,4 +482,4 @@ export default [
       ],
     },
   },
-];
+]);
