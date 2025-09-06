@@ -461,6 +461,7 @@ export default defineConfig([
       'prefer-rest-params': 'warn',
       'prefer-spread': 'warn',
       'prefer-template': 'warn',
+      'preserve-caught-error': 'error',
       radix: [
         'warn',
         'as-needed',
