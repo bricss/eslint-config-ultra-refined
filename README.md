@@ -1,27 +1,13 @@
 Ultra refined ESLint shareable config 📜
 ---
 This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ESNext` syntax.  
-With an emphasis on readability and counterchecks against implicit code flaws.
-
-## Prerequisites
-
-For Windows machines:
-
-* [Git](https://gitforwindows.org/) with Unix tools ☑️
-
-```bash
-npm config set script-shell "C:\\\Program Files\\\Git\\\bin\\\bash.exe"  
-npm config ls -l | grep shell
-```
+Optimized for readability and resilience against implicit code flaws.
 
 ## Installation
 
 ```bash
 npm install eslint-config-ultra-refined --save-dev
 ```
-
-Install peer dependencies manually if needed.  
-You will see the prompt in the shell output upon installation.
 
 ### Usage
 
