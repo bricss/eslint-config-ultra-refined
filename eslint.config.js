@@ -1,4 +1,3 @@
-import babelParser from '@babel/eslint-parser';
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import { defineConfig } from 'eslint/config';
@@ -19,25 +18,6 @@ export default defineConfig([
         ...globals.nodeBuiltin,
         ...globals.serviceworker,
         ...globals.worker,
-      },
-      parser: babelParser,
-      parserOptions: {
-        babelOptions: {
-          parserOpts: {
-            plugins: [
-              [
-                'importAttributes',
-                {
-                  deprecatedAssertSyntax: true,
-                },
-              ],
-            ],
-          },
-        },
-        ecmaFeatures: {
-          jsx: true,
-        },
-        requireConfigFile: false,
       },
     },
     rules: {
@@ -388,6 +368,7 @@ export default defineConfig([
       'no-empty-function': 'error',
       'no-extend-native': 'error',
       'no-extra-bind': 'error',
+      'no-implied-eval': 'warn',
       'no-lone-blocks': 'error',
       'no-lonely-if': 'error',
       'no-loop-func': 'error',
@@ -400,7 +381,6 @@ export default defineConfig([
       'no-sequences': 'warn',
       'no-template-curly-in-string': 'error',
       'no-throw-literal': 'error',
-      'no-unassigned-vars': 'error',
       'no-undef-init': 'error',
       'no-unmodified-loop-condition': 'warn',
       'no-unneeded-ternary': 'error',
@@ -420,7 +400,6 @@ export default defineConfig([
           variables: false,
         },
       ],
-      'no-useless-assignment': 'error',
       'no-useless-call': 'error',
       'no-useless-computed-key': 'error',
       'no-useless-concat': 'error',
@@ -461,11 +440,7 @@ export default defineConfig([
       'prefer-rest-params': 'warn',
       'prefer-spread': 'warn',
       'prefer-template': 'warn',
-      'preserve-caught-error': 'error',
-      radix: [
-        'warn',
-        'as-needed',
-      ],
+      radix: 'warn',
       'require-atomic-updates': 'warn',
       'require-await': 'error',
       'sort-keys': [
