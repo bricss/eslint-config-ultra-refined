@@ -12,12 +12,7 @@ export default defineConfig([
     languageOptions: {
       globals: {
         ...globals.browser,
-        ...globals.builtin,
-        ...globals.mocha,
         ...globals.node,
-        ...globals.nodeBuiltin,
-        ...globals.serviceworker,
-        ...globals.worker,
       },
     },
     rules: {
@@ -455,6 +450,37 @@ export default defineConfig([
       yoda: [
         'warn',
         'never',
+      ],
+    },
+  },
+  {
+    files: ['**/*.{spec,test}.{{[cm],}js,{[cm],}ts}'],
+    languageOptions: {
+      globals: {
+        ...globals.mocha,
+      },
+    },
+    rules: {
+      'no-restricted-syntax': [
+        'error',
+        {
+          message: 'Do not leave .only in tests',
+          selector: 'CallExpression[callee.object.name=/^(describe|it)$/][callee.property.name="only"]',
+        },
+        {
+          message: 'Suite title must contain at least two words',
+          selector: 'CallExpression:matches([callee.name="describe"],[callee.object.name="describe"][callee.property.name=/^(only|skip)$/])\
+          > Literal:first-child:not([value=/^[\\w\\p{Punctuation}\\p{Symbol}]+(?:\\s+[\\w\\p{Punctuation}\\p{Symbol}]+)/u]),\
+          CallExpression:matches([callee.name="describe"],[callee.object.name="describe"][callee.property.name=/^(only|skip)$/])\
+          > TemplateLiteral[expressions.length=0]:not([quasis.0.value.cooked=/^[\\w\\p{Punctuation}\\p{Symbol}]+(?:\\s+[\\w\\p{Punctuation}\\p{Symbol}]+)/u])',
+        },
+        {
+          message: 'Test title must start with "should"',
+          selector: 'CallExpression:matches([callee.name="it"],[callee.object.name="it"][callee.property.name=/^(only|skip)$/])\
+          > Literal:first-child:not([value=/^should\\b/]),\
+          CallExpression:matches([callee.name="it"],[callee.object.name="it"][callee.property.name=/^(only|skip)$/])\
+          > TemplateLiteral > TemplateElement:first-child:not([value.cooked=/^should\\b/])',
+        },
       ],
     },
   },
