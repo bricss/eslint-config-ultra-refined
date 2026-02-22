@@ -454,7 +454,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['**/*.{spec,test}.{{[cm],}js,{[cm],}ts}'],
+    files: ['**/test/**/*.{{[cm],}js,{[cm],}ts}'],
     languageOptions: {
       globals: {
         ...globals.mocha,
