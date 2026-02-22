@@ -35,8 +35,8 @@
   "name": "eslint-config-ultra-refined",
   "peerDependencies": {
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.8.0",
-    "eslint": "^10.0.0",
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "eslint": "^10.0.1",
     "globals": "^17.3.0"
   },
   "repository": {
@@ -50,5 +50,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "4.1.1"
+  "version": "4.1.2"
 }
