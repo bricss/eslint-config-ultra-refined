@@ -11,7 +11,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "globals": "^17.4.0"
   },
   "files": [
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "globals": "^17.4.0"
   },
   "repository": {
@@ -44,11 +44,10 @@
     "url": "git+https://github.com/bricss/eslint-config-ultra-refined.git"
   },
   "scripts": {
-    "peerinstall": "node -p \"require('./package.json').peerDependencies\" | sed 's/[\\{\\},]//g ; s/: /@/g' | tr -d ['\\042','\\047'] | tr -s '[:space:]' ' ' | xargs -0 printf \"npm install %s --save-dev\\n\\n\"",
-    "printinstall": "printf \"To install peer dependencies manually run the following command:\\n\\n\" && npm -s run peerinstall",
+    "preversion": "npm pkg set $(npm pkg get devDependencies | sed -r 's/^\\{//; s/\\}$//; s/\",[[:space:]]*\"/\"\\n\"/g; s/,$//; s/\"([^\"]+)\":[[:space:]]*\"([^\"]+)\"/peerDependencies.\\1=\\2/' | xargs)",
     "start": "eslint --concurrency=auto",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "4.1.4"
+  "version": "4.1.5"
 }
