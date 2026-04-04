@@ -11,7 +11,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "globals": "^17.4.0"
   },
   "files": [
@@ -36,7 +36,7 @@
   "peerDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "globals": "^17.4.0"
   },
   "repository": {
@@ -44,10 +44,10 @@
     "url": "git+https://github.com/bricss/eslint-config-ultra-refined.git"
   },
   "scripts": {
-    "preversion": "npm pkg set $(npm pkg get devDependencies | sed -r 's/^\\{//; s/\\}$//; s/\",[[:space:]]*\"/\"\\n\"/g; s/,$//; s/\"([^\"]+)\":[[:space:]]*\"([^\"]+)\"/peerDependencies.\\1=\\2/' | xargs)",
+    "version": "npm pkg set $(npm pkg get devDependencies | sed -r 's/^\\{//; s/\\}$//; s/\",[[:space:]]*\"/\"\\n\"/g; s/,$//; s/\"([^\"]+)\":[[:space:]]*\"([^\"]+)\"/peerDependencies.\\1=\\2/')",
     "start": "eslint --concurrency=auto",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "version": "4.1.5"
+  "version": "4.1.6"
 }
