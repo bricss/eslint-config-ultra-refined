@@ -308,6 +308,7 @@ export default defineConfig([
           ignorePattern: 'pragma|ignored',
         },
       ],
+      'class-methods-use-this': 'error',
       curly: [
         'error',
         'multi-line',
@@ -361,6 +362,7 @@ export default defineConfig([
         },
       ],
       'no-empty-function': 'error',
+      'no-eq-null': 'error',
       'no-extend-native': 'error',
       'no-extra-bind': 'error',
       'no-implied-eval': 'warn',
