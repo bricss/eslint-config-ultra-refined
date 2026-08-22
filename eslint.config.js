@@ -379,7 +379,10 @@ export default defineConfig([
       'no-template-curly-in-string': 'error',
       'no-throw-literal': 'error',
       'no-undef-init': 'error',
-      'no-unmodified-loop-condition': 'warn',
+      'no-unmodified-loop-condition': [
+        'warn',
+        { checkConditionalExpressions: true },
+      ],
       'no-unneeded-ternary': 'error',
       'no-unreachable-loop': 'error',
       'no-unused-vars': [
