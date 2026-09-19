@@ -407,10 +407,7 @@ export default defineConfig([
       'no-useless-constructor': 'warn',
       'no-useless-rename': 'error',
       'no-useless-return': 'error',
-      'object-shorthand': [
-        'error',
-        'properties',
-      ],
+      'object-shorthand': 'error',
       'one-var': [
         'error',
         {
