@@ -344,7 +344,13 @@ export default defineConfig([
           max: 4,
         },
       ],
-      'new-cap': 'error',
+      'new-cap': [
+        'warn',
+        {
+          capIsNew: false,
+          properties: false,
+        },
+      ],
       'no-await-in-loop': 'error',
       'no-console': 'warn',
       'no-constructor-return': 'error',
