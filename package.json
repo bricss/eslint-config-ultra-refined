@@ -44,7 +44,7 @@
     "url": "git+https://github.com/bricss/eslint-config-ultra-refined.git"
   },
   "scripts": {
-    "version": "npm pkg set $(npm pkg get devDependencies | sed -r -e 's/^\\{//' -e 's/\\}$//' -e \"s/^[[:space:]]*'?([^:']+)'?:[[:space:]]*'([^']+)'[,]?$/peerDependencies.\\1=\\2/\" -e '/^[[:space:]]*$/d' | xargs -d '\\n')",
+    "version": "npm pkg set $(node -p 'Object.entries(require(\"./package.json\").devDependencies).map(([k,v])=>`peerDependencies.${k}=${v}`).join(\" \")')",
     "start": "eslint --concurrency=auto",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
