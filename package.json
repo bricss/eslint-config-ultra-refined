@@ -11,8 +11,8 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.14.0",
-    "globals": "^17.13.0"
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
   },
   "files": [
     "*.js"
@@ -36,18 +36,18 @@
   "peerDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.14.0",
-    "globals": "^17.13.0"
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bricss/eslint-config-ultra-refined.git"
   },
   "scripts": {
-    "version": "npm pkg set $(node -p 'Object.entries(require(\"./package.json\").devDependencies).map(([k,v])=>`peerDependencies.${k}=${v}`).join(\" \")')",
-    "start": "eslint --concurrency=auto",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --concurrency=auto",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "npm pkg set $(node -p 'Object.entries(require(\"./package.json\").devDependencies).map(([k,v])=>`peerDependencies.${k}=${v}`).join(\" \")')"
   },
   "type": "module",
-  "version": "4.4.4"
+  "version": "4.4.5"
 }
