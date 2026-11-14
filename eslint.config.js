@@ -50,7 +50,7 @@ export default defineConfig([
         },
       ],
       '@stylistic/lines-around-comment': ['error', { afterHashbangComment: true, beforeBlockComment: false }],
-      '@stylistic/list-style': ['error', { singleLine: { maxItems: 3 } }],
+      '@stylistic/list-style': ['error', { singleLine: { maxItems: 5 } }],
       '@stylistic/max-len': [
         'error',
         {
@@ -110,7 +110,7 @@ export default defineConfig([
       'grouped-accessor-pairs': 'error',
       'guard-for-in': 'error',
       'logical-assignment-operators': ['warn', 'always', { enforceForIfStatements: true }],
-      'max-classes-per-file': ['error', { ignoreExpressions: true, max: 4 }],
+      'max-classes-per-file': ['error', { ignoreExpressions: true, max: 5 }],
       'new-cap': ['warn', { capIsNew: false, properties: false }],
       'no-await-in-loop': 'error',
       'no-console': 'warn',

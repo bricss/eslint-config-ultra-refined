@@ -49,5 +49,5 @@
     "version": "npm pkg set $(node -p 'Object.entries(require(\"./package.json\").devDependencies).map(([k,v])=>`peerDependencies.${k}=${v}`).join(\" \")')"
   },
   "type": "module",
-  "version": "5.0.0"
+  "version": "5.0.1"
 }
