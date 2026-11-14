@@ -104,6 +104,7 @@ export default defineConfig([
       'default-case': 'warn',
       'default-case-last': 'error',
       'dot-notation': 'error',
+      'e18e/prefer-static-regex': 'warn',
       eqeqeq: ['error', 'smart'],
       'func-name-matching': 'error',
       'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
