@@ -1,7 +1,7 @@
 Ultra refined ESLint shareable config 📜
 ---
 This package provides all-purpose, extensible **[ESLint](https://eslint.org/)** config for `ESNext` syntax.  
-Optimized for readability and resilience against implicit code flaws.
+Optimized for performance ⚡, readability 📖 and resilience 🛡️ against implicit code 🧬 flaws.
 
 ## Installation
 
