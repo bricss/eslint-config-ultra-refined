@@ -110,7 +110,6 @@ export default defineConfig([
       'e18e/prefer-includes-over-regex-test': 'error',
       'e18e/prefer-inline-equality': 'error',
       'e18e/prefer-static-collator': 'error',
-      'e18e/prefer-static-regex': 'warn',
       eqeqeq: ['error', 'smart'],
       'func-name-matching': 'error',
       'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
